@@ -54,10 +54,10 @@
 - Meet文字起こしはGoogle Driveからダウンロードしてminutes/に配置
 
 ## Googleカレンダー連携
-- `python scripts/calendar.py today` - 今日の予定
-- `python scripts/calendar.py week` - 今週の予定
-- `python scripts/calendar.py date YYYY-MM-DD` - 指定日の予定
-- `python scripts/calendar.py range YYYY-MM-DD YYYY-MM-DD` - 期間指定
+- `python scripts/gcal.py today` - 今日の予定
+- `python scripts/gcal.py week` - 今週の予定
+- `python scripts/gcal.py date YYYY-MM-DD` - 指定日の予定
+- `python scripts/gcal.py range YYYY-MM-DD YYYY-MM-DD` - 期間指定
 - Google公式SDK使用（読み取り専用スコープ）
 - 認証ファイル: credentials.json, token.json（git管理外）
 
