@@ -1,14 +1,19 @@
 .env
 .venv/
+credentials.json
+token.json
 .DS_Store
 *.m4a
 projects/*/proposals/generated/*.pptx
 __pycache__/
 *.pyc
 
-# 既存の案件フォルダ（projects/配下に整理後に削除予定）
-弘電社PJ/
-東亜PJ/
+# 案件のバイナリファイル（ローカルのみ）
+projects/*/proposals/*.pptx
+projects/*/docs/
+projects/*/minutes/*.pdf
+projects/*/emails/
+projects/*/code/*.mov
 
 # ルート直下のPPTX元ファイル（templates/に配置済み）
 【Bizdev雛形】*.pptx

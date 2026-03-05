@@ -53,6 +53,14 @@
 - Notion MCPは1ページ単位でのアクセスに制限あり
 - Meet文字起こしはGoogle Driveからダウンロードしてminutes/に配置
 
+## Googleカレンダー連携
+- `python scripts/calendar.py today` - 今日の予定
+- `python scripts/calendar.py week` - 今週の予定
+- `python scripts/calendar.py date YYYY-MM-DD` - 指定日の予定
+- `python scripts/calendar.py range YYYY-MM-DD YYYY-MM-DD` - 期間指定
+- Google公式SDK使用（読み取り専用スコープ）
+- 認証ファイル: credentials.json, token.json（git管理外）
+
 ## Python環境
 python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
 スクリプト実行時は .venv/bin/python を使用
