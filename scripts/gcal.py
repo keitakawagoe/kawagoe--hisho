@@ -23,6 +23,7 @@
 必要なスコープ: calendar.events.readonly（読み取りのみ）
 """
 
+import io
 import os
 import sys
 import json
@@ -33,12 +34,16 @@ from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
+from googleapiclient.http import MediaIoBaseDownload
 
 # プロジェクトルート
 PROJECT_ROOT = Path(__file__).parent.parent
 
 # 読み取り専用スコープ（最小権限）
-SCOPES = ["https://www.googleapis.com/auth/calendar.events.readonly"]
+SCOPES = [
+    "https://www.googleapis.com/auth/calendar.events.readonly",
+    "https://www.googleapis.com/auth/drive.readonly",
+]
 
 # 認証ファイルのパス
 CREDENTIALS_PATH = PROJECT_ROOT / "credentials.json"
@@ -73,12 +78,12 @@ def get_service():
             token.write(creds.to_json())
         print(f"認証トークンを保存: {TOKEN_PATH}")
 
-    return build("calendar", "v3", credentials=creds)
+    return creds
 
 
-def get_events(service, time_min, time_max, max_results=50):
+def get_events(cal_service, time_min, time_max, max_results=50):
     """指定期間のイベントを取得する。"""
-    events_result = service.events().list(
+    events_result = cal_service.events().list(
         calendarId="primary",
         timeMin=time_min.isoformat() + "Z",
         timeMax=time_max.isoformat() + "Z",
@@ -88,6 +93,41 @@ def get_events(service, time_min, time_max, max_results=50):
     ).execute()
 
     return events_result.get("items", [])
+
+
+def download_attachment(drive_service, file_id, dest_path):
+    """Google DriveからファイルをダウンロードしてMeet文字起こし等を保存する。"""
+    # まずファイル情報を取得
+    file_meta = drive_service.files().get(fileId=file_id, fields="name,mimeType").execute()
+    name = file_meta["name"]
+    mime = file_meta.get("mimeType", "")
+
+    # Google Docs系はエクスポート、それ以外は直接DL
+    export_map = {
+        "application/vnd.google-apps.document": ("text/plain", ".txt"),
+        "application/vnd.google-apps.spreadsheet": ("text/csv", ".csv"),
+        "application/vnd.google-apps.presentation": ("application/pdf", ".pdf"),
+    }
+
+    dest = Path(dest_path)
+    dest.mkdir(parents=True, exist_ok=True)
+
+    if mime in export_map:
+        export_mime, ext = export_map[mime]
+        request = drive_service.files().export_media(fileId=file_id, mimeType=export_mime)
+        filename = dest / (Path(name).stem + ext)
+    else:
+        request = drive_service.files().get_media(fileId=file_id)
+        filename = dest / name
+
+    with open(filename, "wb") as f:
+        downloader = MediaIoBaseDownload(f, request)
+        done = False
+        while not done:
+            _, done = downloader.next_chunk()
+
+    print(f"  ダウンロード完了: {filename}")
+    return str(filename)
 
 
 def format_event(event):
@@ -118,6 +158,9 @@ def format_event(event):
     attendees = event.get("attendees", [])
     attendee_names = [a.get("displayName", a.get("email", "")) for a in attendees[:5]]
 
+    # 添付ファイル
+    attachments = event.get("attachments", [])
+
     result = f"  {time_str}  {summary}"
     if location:
         result += f"\n           場所: {location}"
@@ -125,6 +168,10 @@ def format_event(event):
         result += f"\n           Meet: {meet_link}"
     if attendee_names:
         result += f"\n           参加者: {', '.join(attendee_names)}"
+    for att in attachments:
+        att_title = att.get("title", "(不明)")
+        att_url = att.get("fileUrl", "")
+        result += f"\n           添付: {att_title} ({att_url})"
 
     return result
 
@@ -152,60 +199,89 @@ def format_events_markdown(events, date_label):
     return "\n".join(lines)
 
 
-def cmd_today(service):
+def cmd_today(cal_service):
     """今日の予定を表示"""
     now = datetime.utcnow().replace(hour=0, minute=0, second=0, microsecond=0)
     end = now + timedelta(days=1)
-    events = get_events(service, now, end)
+    events = get_events(cal_service, now, end)
     print(format_events_markdown(events, "今日の予定"))
 
 
-def cmd_week(service):
+def cmd_week(cal_service):
     """今週の予定を表示"""
     now = datetime.utcnow().replace(hour=0, minute=0, second=0, microsecond=0)
-    # 今週の月曜日から日曜日まで
     monday = now - timedelta(days=now.weekday())
     sunday = monday + timedelta(days=7)
-    events = get_events(service, monday, sunday)
+    events = get_events(cal_service, monday, sunday)
     print(format_events_markdown(events, "今週の予定"))
 
 
-def cmd_date(service, date_str):
+def cmd_date(cal_service, date_str):
     """指定日の予定を表示"""
     dt = datetime.fromisoformat(date_str)
     end = dt + timedelta(days=1)
-    events = get_events(service, dt, end)
+    events = get_events(cal_service, dt, end)
     print(format_events_markdown(events, f"{date_str} の予定"))
 
 
-def cmd_range(service, start_str, end_str):
+def cmd_range(cal_service, start_str, end_str):
     """指定期間の予定を表示"""
     start = datetime.fromisoformat(start_str)
     end = datetime.fromisoformat(end_str) + timedelta(days=1)
-    events = get_events(service, start, end)
+    events = get_events(cal_service, start, end)
     print(format_events_markdown(events, f"{start_str} ~ {end_str} の予定"))
+
+
+def cmd_dl(cal_service, drive_service, date_str, dest_path):
+    """指定日の予定の添付ファイルをすべてダウンロードする。"""
+    dt = datetime.fromisoformat(date_str)
+    end = dt + timedelta(days=1)
+    events = get_events(cal_service, dt, end)
+
+    count = 0
+    for event in events:
+        attachments = event.get("attachments", [])
+        if not attachments:
+            continue
+        summary = event.get("summary", "(タイトルなし)")
+        print(f"\n{summary}:")
+        for att in attachments:
+            file_id = att.get("fileId")
+            if file_id:
+                download_attachment(drive_service, file_id, dest_path)
+                count += 1
+
+    if count == 0:
+        print("添付ファイルのある予定はありませんでした。")
+    else:
+        print(f"\n合計 {count} ファイルをダウンロードしました → {dest_path}")
 
 
 def main():
     if len(sys.argv) < 2:
         print("使い方:")
-        print("  python scripts/calendar.py today          # 今日の予定")
-        print("  python scripts/calendar.py week           # 今週の予定")
-        print("  python scripts/calendar.py date 2026-03-10  # 指定日")
-        print("  python scripts/calendar.py range 2026-03-01 2026-03-31  # 期間")
+        print("  python scripts/gcal.py today                              # 今日の予定")
+        print("  python scripts/gcal.py week                               # 今週の予定")
+        print("  python scripts/gcal.py date 2026-03-10                    # 指定日")
+        print("  python scripts/gcal.py range 2026-03-01 2026-03-31        # 期間")
+        print("  python scripts/gcal.py dl 2026-03-05 projects/koden/docs/ # 添付DL")
         sys.exit(1)
 
-    service = get_service()
+    creds = get_service()
+    cal_service = build("calendar", "v3", credentials=creds)
     cmd = sys.argv[1]
 
     if cmd == "today":
-        cmd_today(service)
+        cmd_today(cal_service)
     elif cmd == "week":
-        cmd_week(service)
+        cmd_week(cal_service)
     elif cmd == "date" and len(sys.argv) >= 3:
-        cmd_date(service, sys.argv[2])
+        cmd_date(cal_service, sys.argv[2])
     elif cmd == "range" and len(sys.argv) >= 4:
-        cmd_range(service, sys.argv[2], sys.argv[3])
+        cmd_range(cal_service, sys.argv[2], sys.argv[3])
+    elif cmd == "dl" and len(sys.argv) >= 4:
+        drive_service = build("drive", "v3", credentials=creds)
+        cmd_dl(cal_service, drive_service, sys.argv[2], sys.argv[3])
     else:
         print(f"不明なコマンド: {cmd}")
         sys.exit(1)
