@@ -43,6 +43,7 @@ PROJECT_ROOT = Path(__file__).parent.parent
 SCOPES = [
     "https://www.googleapis.com/auth/calendar.events.readonly",
     "https://www.googleapis.com/auth/drive.readonly",
+    "https://www.googleapis.com/auth/gmail.readonly",
 ]
 
 # 認証ファイルのパス
@@ -112,13 +113,16 @@ def download_attachment(drive_service, file_id, dest_path):
     dest = Path(dest_path)
     dest.mkdir(parents=True, exist_ok=True)
 
+    # ファイル名をサニタイズ（/ や特殊文字を除去）
+    safe_name = name.replace("/", "-").replace(":", "-").replace("\u3000", " ").strip()
+
     if mime in export_map:
         export_mime, ext = export_map[mime]
         request = drive_service.files().export_media(fileId=file_id, mimeType=export_mime)
-        filename = dest / (Path(name).stem + ext)
+        filename = dest / (Path(safe_name).stem + ext)
     else:
         request = drive_service.files().get_media(fileId=file_id)
-        filename = dest / name
+        filename = dest / safe_name
 
     with open(filename, "wb") as f:
         downloader = MediaIoBaseDownload(f, request)
