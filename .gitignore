@@ -22,3 +22,7 @@ projects/*/code/*.mov
 # 大きなバイナリ
 *.mov
 *.mp4
+
+# ローカル設定（シークレット含む）
+**/local.settings.json
+**/test_*_local.py

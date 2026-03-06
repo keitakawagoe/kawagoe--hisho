@@ -1,0 +1,560 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "類似工事検索API",
+    "description": "建設工事データベースを検索するAPI。工事情報、明細、歩掛り、単価などを検索可能。",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://toadoro-search-func.azurewebsites.net/api",
+      "description": "Azure Functions"
+    }
+  ],
+  "security": [
+    {
+      "function_key": []
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "function_key": {
+        "type": "apiKey",
+        "name": "x-functions-key",
+        "in": "header"
+      }
+    }
+  },
+  "paths": {
+    "/search_projects": {
+      "post": {
+        "operationId": "searchProjects",
+        "summary": "工事検索",
+        "description": "工事サマリを全文検索。工事名、支店、エリア、請負金額などで絞り込み可能。対応質問例: 「関東で請負金額が大きい工事」「舗装を含む工事一覧」",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "description": "検索クエリ（工事名、工種名などで検索）",
+                    "example": "舗装"
+                  },
+                  "filters": {
+                    "type": "object",
+                    "description": "フィルタ条件",
+                    "properties": {
+                      "branch": {
+                        "type": "string",
+                        "description": "支店名で完全一致フィルタ",
+                        "example": "関西支社"
+                      },
+                      "location": {
+                        "type": "string",
+                        "description": "都道府県で完全一致フィルタ"
+                      },
+                      "contract_amount": {
+                        "type": "object",
+                        "description": "請負金額の範囲フィルタ",
+                        "properties": {
+                          "gte": {
+                            "type": "integer",
+                            "description": "以上"
+                          },
+                          "lte": {
+                            "type": "integer",
+                            "description": "以下"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "orderby": {
+                    "type": "string",
+                    "description": "ソート条件（例: contract_amount desc）",
+                    "example": "contract_amount desc"
+                  },
+                  "top": {
+                    "type": "integer",
+                    "description": "取得件数（デフォルト20）",
+                    "default": 20
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "検索結果",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "results": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    },
+                    "count": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/search_details": {
+      "post": {
+        "operationId": "searchDetails",
+        "summary": "明細検索",
+        "description": "工事明細（工種、材料など）を全文検索。単価、数量、規格で絞り込み可能。対応質問例: 「異径継手Φ60-114の単価」「切削オーバーレイ8000m2」",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "description": "検索クエリ（工種名、材料名、規格などで検索）",
+                    "example": "集水桝 750"
+                  },
+                  "filters": {
+                    "type": "object",
+                    "description": "フィルタ条件",
+                    "properties": {
+                      "branch": {
+                        "type": "string",
+                        "description": "支店名で完全一致フィルタ"
+                      },
+                      "level": {
+                        "type": "integer",
+                        "description": "階層フィルタ（3=親工種, 4=内訳, 5=詳細）"
+                      },
+                      "unit": {
+                        "type": "string",
+                        "description": "単位で完全一致フィルタ（m2, m3, 箇所など）"
+                      },
+                      "quantity": {
+                        "type": "object",
+                        "description": "数量の範囲フィルタ",
+                        "properties": {
+                          "gte": {
+                            "type": "number"
+                          },
+                          "lte": {
+                            "type": "number"
+                          }
+                        }
+                      },
+                      "unit_price": {
+                        "type": "object",
+                        "description": "単価の範囲フィルタ",
+                        "properties": {
+                          "gte": {
+                            "type": "number"
+                          },
+                          "lte": {
+                            "type": "number"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "orderby": {
+                    "type": "string",
+                    "description": "ソート条件（例: quantity desc, unit_price asc）"
+                  },
+                  "top": {
+                    "type": "integer",
+                    "default": 20
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "検索結果",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "results": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    },
+                    "count": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/get_project_details": {
+      "post": {
+        "operationId": "getProjectDetails",
+        "summary": "工事の全明細取得",
+        "description": "特定工事の全明細を取得。歩掛り（階層4）の取得に使用。対応質問例: 「750現場打ち集水桝の歩掛り」「○○工事の全明細」",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["project_id"],
+                "properties": {
+                  "project_id": {
+                    "type": "string",
+                    "description": "工事ID（search_detailsで取得したproject_id）"
+                  },
+                  "level": {
+                    "type": "integer",
+                    "description": "特定階層のみ取得（4=歩掛り内訳）"
+                  },
+                  "top": {
+                    "type": "integer",
+                    "description": "取得件数",
+                    "default": 500
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "明細一覧",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "results": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    },
+                    "count": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/aggregate_by_project": {
+      "post": {
+        "operationId": "aggregateByProject",
+        "summary": "工事単位で集約",
+        "description": "複数の工種を検索し、それらを全て含む（または一部含む）工事を返す。対応質問例: 「逆T型擁壁と逆U型擁壁を含む工事」",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["queries"],
+                "properties": {
+                  "queries": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "検索クエリのリスト",
+                    "example": ["逆T型擁壁", "逆U型擁壁"]
+                  },
+                  "operator": {
+                    "type": "string",
+                    "enum": ["AND", "OR"],
+                    "description": "工事の絞り込み条件（AND=全て含む, OR=いずれか含む）",
+                    "default": "AND"
+                  },
+                  "filters": {
+                    "type": "object",
+                    "description": "追加フィルタ条件",
+                    "properties": {
+                      "branch": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "工事一覧（含まれる工種情報付き）",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "results": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "project_id": {
+                            "type": "string"
+                          },
+                          "project_name": {
+                            "type": "string"
+                          },
+                          "branch": {
+                            "type": "string"
+                          },
+                          "matched_queries": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "details": {
+                            "type": "array",
+                            "items": {
+                              "type": "object"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "count": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/get_statistics": {
+      "post": {
+        "operationId": "getStatistics",
+        "summary": "統計情報取得",
+        "description": "特定の工種について、単価・数量・金額の統計（平均、最小、最大）を計算。対応質問例: 「切削オーバーレイの平均単価」「集水桝の金額レンジ」",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "description": "検索クエリ",
+                    "example": "切削オーバーレイ"
+                  },
+                  "filters": {
+                    "type": "object",
+                    "description": "フィルタ条件",
+                    "properties": {
+                      "unit": {
+                        "type": "string",
+                        "description": "単位でフィルタ",
+                        "example": "m2"
+                      },
+                      "branch": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "aggregate_fields": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "集計対象フィールド",
+                    "default": ["unit_price", "quantity", "amount"]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "統計情報",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "query": {
+                      "type": "string"
+                    },
+                    "total_records": {
+                      "type": "integer"
+                    },
+                    "statistics": {
+                      "type": "object",
+                      "additionalProperties": {
+                        "type": "object",
+                        "properties": {
+                          "count": {
+                            "type": "integer"
+                          },
+                          "min": {
+                            "type": "number"
+                          },
+                          "max": {
+                            "type": "number"
+                          },
+                          "avg": {
+                            "type": "number"
+                          },
+                          "sum": {
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "sample_records": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/search_indirect_costs": {
+      "post": {
+        "operationId": "searchIndirectCosts",
+        "summary": "間接費検索",
+        "description": "間接費明細（共通仮設費・現場経費）を検索。対応質問例: 「重機運搬費の単価」「共通仮設費の内訳」",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "description": "検索クエリ（項目名で検索）",
+                    "example": "重機運搬"
+                  },
+                  "filters": {
+                    "type": "object",
+                    "description": "フィルタ条件",
+                    "properties": {
+                      "category": {
+                        "type": "string",
+                        "description": "区分でフィルタ（共通仮設費、現場経費など）",
+                        "example": "共通仮設費"
+                      },
+                      "branch": {
+                        "type": "string",
+                        "description": "支店名でフィルタ"
+                      },
+                      "project_id": {
+                        "type": "string",
+                        "description": "工事IDでフィルタ"
+                      }
+                    }
+                  },
+                  "orderby": {
+                    "type": "string",
+                    "description": "ソート条件（例: amount desc）"
+                  },
+                  "top": {
+                    "type": "integer",
+                    "description": "取得件数（デフォルト20）",
+                    "default": 20
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "検索結果",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "results": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "project_id": {
+                            "type": "string"
+                          },
+                          "project_name": {
+                            "type": "string"
+                          },
+                          "branch": {
+                            "type": "string"
+                          },
+                          "category": {
+                            "type": "string"
+                          },
+                          "item_name": {
+                            "type": "string"
+                          },
+                          "unit": {
+                            "type": "string"
+                          },
+                          "quantity": {
+                            "type": "number"
+                          },
+                          "unit_price": {
+                            "type": "number"
+                          },
+                          "amount": {
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "count": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

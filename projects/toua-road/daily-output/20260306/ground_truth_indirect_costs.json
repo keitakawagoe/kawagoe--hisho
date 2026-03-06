@@ -1,0 +1,465 @@
+{
+  "共通仮設費": [
+    {
+      "item_name": "共通仮設費",
+      "count": 57,
+      "count_with_amount": 37,
+      "median": 963677,
+      "mean": 1447625,
+      "min": 80000,
+      "max": 8865400
+    },
+    {
+      "item_name": "重機運搬費",
+      "count": 57,
+      "count_with_amount": 36,
+      "median": 383000.0,
+      "mean": 390336,
+      "min": 80000,
+      "max": 1240000
+    },
+    {
+      "item_name": "安全費",
+      "count": 53,
+      "count_with_amount": 19,
+      "median": 620000,
+      "mean": 827947,
+      "min": 10000,
+      "max": 2640000
+    },
+    {
+      "item_name": "技術管理費",
+      "count": 53,
+      "count_with_amount": 16,
+      "median": 210000.0,
+      "mean": 364650,
+      "min": 50000,
+      "max": 1303400
+    },
+    {
+      "item_name": "準備費",
+      "count": 46,
+      "count_with_amount": 15,
+      "median": 10000,
+      "mean": 173768,
+      "min": 1830,
+      "max": 854800
+    },
+    {
+      "item_name": "仮設費",
+      "count": 45,
+      "count_with_amount": 7,
+      "median": 260000,
+      "mean": 1085929,
+      "min": 30000,
+      "max": 4894000
+    },
+    {
+      "item_name": "10t車回送",
+      "count": 31,
+      "count_with_amount": 31,
+      "median": 80000,
+      "mean": 121839,
+      "min": 30000,
+      "max": 500000
+    },
+    {
+      "item_name": "外注経費",
+      "count": 25,
+      "count_with_amount": 24,
+      "median": 350000.0,
+      "mean": 516175,
+      "min": 30000,
+      "max": 2400000
+    },
+    {
+      "item_name": "法定福利費",
+      "count": 24,
+      "count_with_amount": 23,
+      "median": 130000,
+      "mean": 156365,
+      "min": 9000,
+      "max": 850000
+    },
+    {
+      "item_name": "回送  4ｔｾﾙﾌ",
+      "count": 20,
+      "count_with_amount": 20,
+      "median": 66000.0,
+      "mean": 90100,
+      "min": 20000,
+      "max": 450000
+    },
+    {
+      "item_name": "AF回送  大型ｾﾙﾌ",
+      "count": 18,
+      "count_with_amount": 18,
+      "median": 60000.0,
+      "mean": 70111,
+      "min": 50000,
+      "max": 180000
+    },
+    {
+      "item_name": "回送  大型ｾﾙﾌ",
+      "count": 18,
+      "count_with_amount": 18,
+      "median": 72000.0,
+      "mean": 104889,
+      "min": 36000,
+      "max": 600000
+    },
+    {
+      "item_name": "交通保安員",
+      "count": 15,
+      "count_with_amount": 15,
+      "median": 120000,
+      "mean": 312800,
+      "min": 19000,
+      "max": 1300000
+    },
+    {
+      "item_name": "雑材",
+      "count": 15,
+      "count_with_amount": 15,
+      "median": 8000,
+      "mean": 17747,
+      "min": 3000,
+      "max": 150000
+    },
+    {
+      "item_name": "ｺｱｰ採取",
+      "count": 13,
+      "count_with_amount": 13,
+      "median": 25000,
+      "mean": 28769,
+      "min": 18000,
+      "max": 40000
+    },
+    {
+      "item_name": "技工",
+      "count": 11,
+      "count_with_amount": 11,
+      "median": 63000,
+      "mean": 90818,
+      "min": 46000,
+      "max": 210000
+    },
+    {
+      "item_name": "規制車",
+      "count": 8,
+      "count_with_amount": 8,
+      "median": 100000.0,
+      "mean": 130625,
+      "min": 30000,
+      "max": 250000
+    },
+    {
+      "item_name": "重機回送費",
+      "count": 8,
+      "count_with_amount": 8,
+      "median": 65000.0,
+      "mean": 220000,
+      "min": -1000000,
+      "max": 2240000
+    },
+    {
+      "item_name": "トイレカー",
+      "count": 7,
+      "count_with_amount": 7,
+      "median": 100000,
+      "mean": 141429,
+      "min": 50000,
+      "max": 300000
+    },
+    {
+      "item_name": "ﾄﾚｰﾗｰ回送",
+      "count": 6,
+      "count_with_amount": 6,
+      "median": 140000.0,
+      "mean": 161667,
+      "min": 90000,
+      "max": 300000
+    },
+    {
+      "item_name": "4t車回送",
+      "count": 6,
+      "count_with_amount": 6,
+      "median": 75000.0,
+      "mean": 76000,
+      "min": 30000,
+      "max": 120000
+    },
+    {
+      "item_name": "平坦性試験",
+      "count": 6,
+      "count_with_amount": 6,
+      "median": 30000.0,
+      "mean": 30000,
+      "min": 30000,
+      "max": 30000
+    },
+    {
+      "item_name": "回送  ﾄﾚｰﾗｰ",
+      "count": 6,
+      "count_with_amount": 6,
+      "median": 60000.0,
+      "mean": 260000,
+      "min": 60000,
+      "max": 1190000
+    },
+    {
+      "item_name": "切削機回送  ﾄﾚｰﾗｰ",
+      "count": 5,
+      "count_with_amount": 5,
+      "median": 120000,
+      "mean": 117600,
+      "min": 100000,
+      "max": 134000
+    },
+    {
+      "item_name": "酒井地内",
+      "count": 5,
+      "count_with_amount": 5,
+      "median": 116000,
+      "mean": 114800,
+      "min": 58000,
+      "max": 150000
+    },
+    {
+      "item_name": "旭町地内",
+      "count": 5,
+      "count_with_amount": 5,
+      "median": 110000,
+      "mean": 98200,
+      "min": 35000,
+      "max": 160000
+    },
+    {
+      "item_name": "雑費",
+      "count": 5,
+      "count_with_amount": 5,
+      "median": 7180,
+      "mean": 34648,
+      "min": 3500,
+      "max": 150000
+    },
+    {
+      "item_name": "諸経費",
+      "count": 5,
+      "count_with_amount": 5,
+      "median": 400000,
+      "mean": 362153,
+      "min": 57090,
+      "max": 740000
+    },
+    {
+      "item_name": "雑回送",
+      "count": 4,
+      "count_with_amount": 4,
+      "median": 43000.0,
+      "mean": 61000,
+      "min": 8000,
+      "max": 150000
+    },
+    {
+      "item_name": "交通保安員(夜間)",
+      "count": 4,
+      "count_with_amount": 4,
+      "median": 419000.0,
+      "mean": 575500,
+      "min": 264000,
+      "max": 1200000
+    },
+    {
+      "item_name": "ﾊﾞﾙｰﾝﾗｲﾄ",
+      "count": 4,
+      "count_with_amount": 4,
+      "median": 123500.0,
+      "mean": 115000,
+      "min": 45000,
+      "max": 168000
+    },
+    {
+      "item_name": "諸雑費",
+      "count": 4,
+      "count_with_amount": 4,
+      "median": 8000.0,
+      "mean": -238500,
+      "min": -1000000,
+      "max": 30000
+    },
+    {
+      "item_name": "12t車回送",
+      "count": 3,
+      "count_with_amount": 3,
+      "median": 50000,
+      "mean": 73333,
+      "min": 50000,
+      "max": 120000
+    },
+    {
+      "item_name": "現場密度試験",
+      "count": 3,
+      "count_with_amount": 3,
+      "median": 60000,
+      "mean": 270000,
+      "min": 30000,
+      "max": 720000
+    },
+    {
+      "item_name": "",
+      "count": 3,
+      "count_with_amount": 2,
+      "median": 7557000.0,
+      "mean": 7557000,
+      "min": 5900000,
+      "max": 9214000
+    },
+    {
+      "item_name": "汚泥処分費",
+      "count": 3,
+      "count_with_amount": 3,
+      "median": 12000,
+      "mean": 12000,
+      "min": 12000,
+      "max": 12000
+    },
+    {
+      "item_name": "汚泥運搬費",
+      "count": 3,
+      "count_with_amount": 3,
+      "median": 10000,
+      "mean": 10000,
+      "min": 10000,
+      "max": 10000
+    },
+    {
+      "item_name": "交通誘導員(昼間8h)",
+      "count": 3,
+      "count_with_amount": 3,
+      "median": 117000,
+      "mean": 747333,
+      "min": 85000,
+      "max": 2040000
+    },
+    {
+      "item_name": "交通誘導員(夜間8h)",
+      "count": 3,
+      "count_with_amount": 3,
+      "median": 310800,
+      "mean": 488733,
+      "min": 120400,
+      "max": 1035000
+    },
+    {
+      "item_name": "外注経費　法定福利費",
+      "count": 3,
+      "count_with_amount": 3,
+      "median": 490000,
+      "mean": 396667,
+      "min": 50000,
+      "max": 650000
+    },
+    {
+      "item_name": "労務運搬(Wｷｬﾌﾞ)",
+      "count": 3,
+      "count_with_amount": 3,
+      "median": 4000,
+      "mean": 5333,
+      "min": 4000,
+      "max": 8000
+    }
+  ],
+  "現場経費": [
+    {
+      "item_name": "社員給料",
+      "count": 102,
+      "count_with_amount": 100,
+      "median": 601250.0,
+      "mean": 1265450,
+      "min": 40500,
+      "max": 14187000
+    },
+    {
+      "item_name": "現場経費",
+      "count": 59,
+      "count_with_amount": 57,
+      "median": 630000,
+      "mean": 1519041,
+      "min": 78000,
+      "max": 14187000
+    },
+    {
+      "item_name": "雑費",
+      "count": 50,
+      "count_with_amount": 12,
+      "median": 17223.0,
+      "mean": 134154,
+      "min": 2397,
+      "max": 1050000
+    },
+    {
+      "item_name": "事務用品費",
+      "count": 45,
+      "count_with_amount": 1,
+      "median": 42000,
+      "mean": 42000,
+      "min": 42000,
+      "max": 42000
+    },
+    {
+      "item_name": "雑材",
+      "count": 9,
+      "count_with_amount": 9,
+      "median": 18150,
+      "mean": 30179,
+      "min": 2397,
+      "max": 144290
+    },
+    {
+      "item_name": "現場代理人(3級)昼",
+      "count": 6,
+      "count_with_amount": 6,
+      "median": 365000.0,
+      "mean": 1307333,
+      "min": 148000,
+      "max": 4440000
+    },
+    {
+      "item_name": "現場代理人(2級)昼",
+      "count": 6,
+      "count_with_amount": 5,
+      "median": 457500,
+      "mean": 477700,
+      "min": 305000,
+      "max": 650000
+    },
+    {
+      "item_name": "現場代理人(1級)昼",
+      "count": 5,
+      "count_with_amount": 5,
+      "median": 260000,
+      "mean": 587600,
+      "min": 78000,
+      "max": 2080000
+    },
+    {
+      "item_name": "現場代理人(5級)昼",
+      "count": 4,
+      "count_with_amount": 4,
+      "median": 621250.0,
+      "mean": 872375,
+      "min": 107000,
+      "max": 2140000
+    },
+    {
+      "item_name": "現場代理人(1級)夜",
+      "count": 3,
+      "count_with_amount": 3,
+      "median": 171000,
+      "mean": 218500,
+      "min": 57000,
+      "max": 427500
+    }
+  ]
+}

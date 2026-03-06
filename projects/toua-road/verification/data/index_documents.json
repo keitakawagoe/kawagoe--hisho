@@ -1,0 +1,1658 @@
+[
+  {
+    "id": "2320710263_7",
+    "file_name": "2320710263.xlsm",
+    "project_name": "23-263☆（仮称）みんなのスタジアム2.0新設工事",
+    "category": "土工事",
+    "item_name": "基盤整正",
+    "specification": "人工芝・砕石舗装・種子吹付部",
+    "search_text": "基盤整正 人工芝・砕石舗装・種子吹付部 世話役 技工 押ﾌﾞﾙﾄﾞｰｻﾞｰ D20 BH0.15ｸﾚｰﾝ ﾀｲﾔﾛｰﾗ 8t ﾋﾞﾌﾞﾛﾌﾟﾚｰﾄ ﾗﾝﾏｰ 2ｔﾀﾞﾝﾌﾟ 労務運搬(Wｷｬﾌﾞ) 燃料込 雑材 軽油",
+    "unit": "m2",
+    "quantity": 9871,
+    "unit_price": 169,
+    "amount": 1668199,
+    "details": [
+      {
+        "cost_type": "労務費",
+        "item_name": "世話役",
+        "specification": "",
+        "unit": "人",
+        "quantity": 9,
+        "unit_price": 30000,
+        "amount": 270000
+      },
+      {
+        "cost_type": "労務費",
+        "item_name": "技工",
+        "specification": "",
+        "unit": "人",
+        "quantity": 45,
+        "unit_price": 21000,
+        "amount": 945000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "押ﾌﾞﾙﾄﾞｰｻﾞｰ",
+        "specification": "D20",
+        "unit": "台",
+        "quantity": 9,
+        "unit_price": 6000,
+        "amount": 54000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "BH0.15ｸﾚｰﾝ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 9,
+        "unit_price": 8000,
+        "amount": 72000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "ﾀｲﾔﾛｰﾗ",
+        "specification": "8t",
+        "unit": "台",
+        "quantity": 9,
+        "unit_price": 5500,
+        "amount": 49500
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "ﾋﾞﾌﾞﾛﾌﾟﾚｰﾄ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 9,
+        "unit_price": 1000,
+        "amount": 9000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "ﾗﾝﾏｰ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 9,
+        "unit_price": 1000,
+        "amount": 9000
+      },
+      {
+        "cost_type": "運搬費",
+        "item_name": "2ｔﾀﾞﾝﾌﾟ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 18,
+        "unit_price": 5000,
+        "amount": 90000
+      },
+      {
+        "cost_type": "運搬費",
+        "item_name": "労務運搬(Wｷｬﾌﾞ)",
+        "specification": "燃料込",
+        "unit": "台",
+        "quantity": 18,
+        "unit_price": 4000,
+        "amount": 72000
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "雑材",
+        "specification": "",
+        "unit": "式",
+        "quantity": 1,
+        "unit_price": 5000,
+        "amount": 5000
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "軽油",
+        "specification": "",
+        "unit": "L",
+        "quantity": 630,
+        "unit_price": 150,
+        "amount": 94500
+      }
+    ]
+  },
+  {
+    "id": "2320710263_20",
+    "file_name": "2320710263.xlsm",
+    "project_name": "23-263☆（仮称）みんなのスタジアム2.0新設工事",
+    "category": "雨水排水工事",
+    "item_name": "集水桝A",
+    "specification": "ｸﾞﾚｰﾁﾝｸﾞ蓋",
+    "search_text": "集水桝A ｸﾞﾚｰﾁﾝｸﾞ蓋 現場打桝 450/750×450/750×H650 内寸□450用 細目ｸﾞﾚｰﾁﾝｸﾞ T-2 受枠共 落し込 RC-40(t) 配達 生ｺﾝ18-8 生ｺﾝ小口配送料 世話役 技工 BH0.15ｸﾚｰﾝ ﾋﾞﾌﾞﾛﾌﾟﾚｰﾄ ﾗﾝﾏｰ 小物機械 2ｔﾀﾞﾝﾌﾟ 労務運搬(Wｷｬﾌﾞ) 燃料込 雑材 軽油",
+    "unit": "箇所",
+    "quantity": 10,
+    "unit_price": 98000,
+    "amount": 980000,
+    "details": [
+      {
+        "cost_type": "材料費",
+        "item_name": "現場打桝",
+        "specification": "450/750×450/750×H650",
+        "unit": "基",
+        "quantity": 10,
+        "unit_price": 39620,
+        "amount": 396200
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "内寸□450用 細目ｸﾞﾚｰﾁﾝｸﾞ",
+        "specification": "T-2 受枠共 落し込",
+        "unit": "組",
+        "quantity": 10,
+        "unit_price": 17550,
+        "amount": 175500
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "RC-40(t)",
+        "specification": "配達",
+        "unit": "t",
+        "quantity": 1.5,
+        "unit_price": 500,
+        "amount": 750
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "生ｺﾝ18-8",
+        "specification": "",
+        "unit": "m3",
+        "quantity": 1,
+        "unit_price": 22300,
+        "amount": 22300
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "生ｺﾝ小口配送料",
+        "specification": "",
+        "unit": "回",
+        "quantity": 1,
+        "unit_price": 3000,
+        "amount": 3000
+      },
+      {
+        "cost_type": "労務費",
+        "item_name": "世話役",
+        "specification": "",
+        "unit": "人",
+        "quantity": 3,
+        "unit_price": 30000,
+        "amount": 90000
+      },
+      {
+        "cost_type": "労務費",
+        "item_name": "技工",
+        "specification": "",
+        "unit": "人",
+        "quantity": 9,
+        "unit_price": 21000,
+        "amount": 189000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "BH0.15ｸﾚｰﾝ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 3,
+        "unit_price": 8000,
+        "amount": 24000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "ﾋﾞﾌﾞﾛﾌﾟﾚｰﾄ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 3,
+        "unit_price": 1000,
+        "amount": 3000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "ﾗﾝﾏｰ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 3,
+        "unit_price": 1000,
+        "amount": 3000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "小物機械",
+        "specification": "",
+        "unit": "台",
+        "quantity": 7,
+        "unit_price": 3000,
+        "amount": 21000
+      },
+      {
+        "cost_type": "運搬費",
+        "item_name": "2ｔﾀﾞﾝﾌﾟ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 3,
+        "unit_price": 5000,
+        "amount": 15000
+      },
+      {
+        "cost_type": "運搬費",
+        "item_name": "労務運搬(Wｷｬﾌﾞ)",
+        "specification": "燃料込",
+        "unit": "台",
+        "quantity": 3,
+        "unit_price": 4000,
+        "amount": 12000
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "雑材",
+        "specification": "",
+        "unit": "式",
+        "quantity": 1,
+        "unit_price": 2750,
+        "amount": 2750
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "軽油",
+        "specification": "",
+        "unit": "L",
+        "quantity": 150,
+        "unit_price": 150,
+        "amount": 22500
+      }
+    ]
+  },
+  {
+    "id": "2320710263_36",
+    "file_name": "2320710263.xlsm",
+    "project_name": "23-263☆（仮称）みんなのスタジアム2.0新設工事",
+    "category": "雨水排水工事",
+    "item_name": "集水桝B",
+    "specification": "ｺﾞﾑ蓋",
+    "search_text": "集水桝B ｺﾞﾑ蓋 RC-40(t) 配達 生ｺﾝ18-8 生ｺﾝ小口配送料 ゴム蓋 集水桝450用 世話役 技工 BH0.15ｸﾚｰﾝ ﾋﾞﾌﾞﾛﾌﾟﾚｰﾄ ﾗﾝﾏｰ 発電機2K 小物機械 2ｔﾀﾞﾝﾌﾟ 労務運搬(Wｷｬﾌﾞ) 燃料込 型枠材他 雑材 軽油",
+    "unit": "箇所",
+    "quantity": 2,
+    "unit_price": 225000,
+    "amount": 450000,
+    "details": [
+      {
+        "cost_type": "材料費",
+        "item_name": "RC-40(t)",
+        "specification": "配達",
+        "unit": "t",
+        "quantity": 0.3,
+        "unit_price": 500,
+        "amount": 150
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "生ｺﾝ18-8",
+        "specification": "",
+        "unit": "m3",
+        "quantity": 0.3,
+        "unit_price": 22300,
+        "amount": 6690
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "生ｺﾝ小口配送料",
+        "specification": "",
+        "unit": "回",
+        "quantity": 2,
+        "unit_price": 3000,
+        "amount": 6000
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "ゴム蓋",
+        "specification": "集水桝450用",
+        "unit": "枚",
+        "quantity": 4,
+        "unit_price": 42000,
+        "amount": 168000
+      },
+      {
+        "cost_type": "労務費",
+        "item_name": "世話役",
+        "specification": "",
+        "unit": "人",
+        "quantity": 2,
+        "unit_price": 30000,
+        "amount": 60000
+      },
+      {
+        "cost_type": "労務費",
+        "item_name": "技工",
+        "specification": "",
+        "unit": "人",
+        "quantity": 6,
+        "unit_price": 21000,
+        "amount": 126000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "BH0.15ｸﾚｰﾝ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 2,
+        "unit_price": 8000,
+        "amount": 16000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "ﾋﾞﾌﾞﾛﾌﾟﾚｰﾄ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 2,
+        "unit_price": 1000,
+        "amount": 2000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "ﾗﾝﾏｰ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 3,
+        "unit_price": 1000,
+        "amount": 3000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "発電機2K",
+        "specification": "",
+        "unit": "台",
+        "quantity": 3,
+        "unit_price": 1000,
+        "amount": 3000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "小物機械",
+        "specification": "",
+        "unit": "台",
+        "quantity": 3,
+        "unit_price": 3000,
+        "amount": 9000
+      },
+      {
+        "cost_type": "運搬費",
+        "item_name": "2ｔﾀﾞﾝﾌﾟ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 2,
+        "unit_price": 5000,
+        "amount": 10000
+      },
+      {
+        "cost_type": "運搬費",
+        "item_name": "労務運搬(Wｷｬﾌﾞ)",
+        "specification": "燃料込",
+        "unit": "台",
+        "quantity": 2,
+        "unit_price": 4000,
+        "amount": 8000
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "型枠材他",
+        "specification": "",
+        "unit": "式",
+        "quantity": 1,
+        "unit_price": 15000,
+        "amount": 15000
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "雑材",
+        "specification": "",
+        "unit": "式",
+        "quantity": 1,
+        "unit_price": 2160,
+        "amount": 2160
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "軽油",
+        "specification": "",
+        "unit": "L",
+        "quantity": 100,
+        "unit_price": 150,
+        "amount": 15000
+      }
+    ]
+  },
+  {
+    "id": "2320710263_53",
+    "file_name": "2320710263.xlsm",
+    "project_name": "23-263☆（仮称）みんなのスタジアム2.0新設工事",
+    "category": "雨水排水工事",
+    "item_name": "落蓋式側溝",
+    "specification": "U250,ｸﾞﾚｰﾁﾝｸﾞ蓋細目,T2",
+    "search_text": "落蓋式側溝 U250,ｸﾞﾚｰﾁﾝｸﾞ蓋細目,T2 道路用側溝 1種 250 250×250×2000 道路用側溝 1種 250(短尺) 250×250×1000 道路用側溝250用 細目ｸﾞﾚｰﾁﾝｸﾞ T-2 L=995 RC-40(t) 配達 生ｺﾝ1：3ﾓﾙﾀﾙ 世話役 技工 BH0.15ｸﾚｰﾝ ﾋﾞﾌﾞﾛﾌﾟﾚｰﾄ ﾊﾝﾄﾞｶｯﾀｰ ﾌﾞﾚｰﾄﾞ損料含 2ｔﾀﾞﾝﾌﾟ 労務運搬(Wｷｬﾌﾞ) 燃料込 雑材 軽油",
+    "unit": "m",
+    "quantity": 184,
+    "unit_price": 27173,
+    "amount": 4999832,
+    "details": [
+      {
+        "cost_type": "材料費",
+        "item_name": "道路用側溝 1種 250",
+        "specification": "250×250×2000",
+        "unit": "個",
+        "quantity": 92,
+        "unit_price": 11440,
+        "amount": 1052480
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "道路用側溝 1種 250(短尺)",
+        "specification": "250×250×1000",
+        "unit": "個",
+        "quantity": 3,
+        "unit_price": 9170,
+        "amount": 27510
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "道路用側溝250用 細目ｸﾞﾚｰﾁﾝｸﾞ",
+        "specification": "T-2 L=995",
+        "unit": "枚",
+        "quantity": 187,
+        "unit_price": 15180,
+        "amount": 2838660
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "RC-40(t)",
+        "specification": "配達",
+        "unit": "t",
+        "quantity": 15,
+        "unit_price": 500,
+        "amount": 7500
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "生ｺﾝ1：3ﾓﾙﾀﾙ",
+        "specification": "",
+        "unit": "m3",
+        "quantity": 3,
+        "unit_price": 15500,
+        "amount": 46500
+      },
+      {
+        "cost_type": "労務費",
+        "item_name": "世話役",
+        "specification": "",
+        "unit": "人",
+        "quantity": 7,
+        "unit_price": 30000,
+        "amount": 210000
+      },
+      {
+        "cost_type": "労務費",
+        "item_name": "技工",
+        "specification": "",
+        "unit": "人",
+        "quantity": 28,
+        "unit_price": 21000,
+        "amount": 588000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "BH0.15ｸﾚｰﾝ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 7,
+        "unit_price": 8000,
+        "amount": 56000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "ﾋﾞﾌﾞﾛﾌﾟﾚｰﾄ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 7,
+        "unit_price": 1000,
+        "amount": 7000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "ﾊﾝﾄﾞｶｯﾀｰ",
+        "specification": "ﾌﾞﾚｰﾄﾞ損料含",
+        "unit": "台",
+        "quantity": 7,
+        "unit_price": 2000,
+        "amount": 14000
+      },
+      {
+        "cost_type": "運搬費",
+        "item_name": "2ｔﾀﾞﾝﾌﾟ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 14,
+        "unit_price": 5000,
+        "amount": 70000
+      },
+      {
+        "cost_type": "運搬費",
+        "item_name": "労務運搬(Wｷｬﾌﾞ)",
+        "specification": "燃料込",
+        "unit": "台",
+        "quantity": 7,
+        "unit_price": 4000,
+        "amount": 28000
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "雑材",
+        "specification": "",
+        "unit": "式",
+        "quantity": 1,
+        "unit_price": 1850,
+        "amount": 1850
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "軽油",
+        "specification": "",
+        "unit": "L",
+        "quantity": 350,
+        "unit_price": 150,
+        "amount": 52500
+      }
+    ]
+  },
+  {
+    "id": "2320710263_68",
+    "file_name": "2320710263.xlsm",
+    "project_name": "23-263☆（仮称）みんなのスタジアム2.0新設工事",
+    "category": "雨水排水工事",
+    "item_name": "暗渠排水",
+    "specification": "板状排水材,W=300,t=20",
+    "search_text": "暗渠排水 板状排水材,W=300,t=20 グリシート 300×20 L=50m 世話役 技工 2ｔﾀﾞﾝﾌﾟ 労務運搬(Wｷｬﾌﾞ) 燃料込 小物機械 軽油 雑材",
+    "unit": "m",
+    "quantity": 1392,
+    "unit_price": 1300,
+    "amount": 1809600,
+    "details": [
+      {
+        "cost_type": "材料費",
+        "item_name": "グリシート",
+        "specification": "300×20 L=50m",
+        "unit": "巻",
+        "quantity": 29,
+        "unit_price": 55000,
+        "amount": 1595000
+      },
+      {
+        "cost_type": "労務費",
+        "item_name": "世話役",
+        "specification": "",
+        "unit": "人",
+        "quantity": 0,
+        "unit_price": 30000,
+        "amount": 0
+      },
+      {
+        "cost_type": "労務費",
+        "item_name": "技工",
+        "specification": "",
+        "unit": "人",
+        "quantity": 9,
+        "unit_price": 21000,
+        "amount": 189000
+      },
+      {
+        "cost_type": "運搬費",
+        "item_name": "2ｔﾀﾞﾝﾌﾟ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 1,
+        "unit_price": 5000,
+        "amount": 5000
+      },
+      {
+        "cost_type": "運搬費",
+        "item_name": "労務運搬(Wｷｬﾌﾞ)",
+        "specification": "燃料込",
+        "unit": "台",
+        "quantity": 3,
+        "unit_price": 4000,
+        "amount": 12000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "小物機械",
+        "specification": "",
+        "unit": "台",
+        "quantity": 0,
+        "unit_price": 3000,
+        "amount": 0
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "軽油",
+        "specification": "",
+        "unit": "L",
+        "quantity": 60,
+        "unit_price": 150,
+        "amount": 9000
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "雑材",
+        "specification": "",
+        "unit": "式",
+        "quantity": 1,
+        "unit_price": 0,
+        "amount": 0
+      }
+    ]
+  },
+  {
+    "id": "2320710263_77",
+    "file_name": "2320710263.xlsm",
+    "project_name": "23-263☆（仮称）みんなのスタジアム2.0新設工事",
+    "category": "雨水排水工事",
+    "item_name": "暗渠排水",
+    "specification": "NHﾄﾞﾚｰﾝ,各種継手含む",
+    "search_text": "暗渠排水 NHﾄﾞﾚｰﾝ,各種継手含む NHﾄﾞﾚｰﾝ Φ60 NH-60 NHﾄﾞﾚｰﾝ Φ114(縁付き) NH-114F 継手Φ60 L字型 NHL60 継手Φ60 T字型 NHT60 継手Φ60 十字型 NHX60 異径継手Φ60-114 T字型 NHT114-60F 継手Φ114 L字型(縁付き) NHL114F 運搬費 大型ユニック車 RC-40(t) 配達 生ｺﾝ1：3ﾓﾙﾀﾙ 世話役 技工 BH0.15ｸﾚｰﾝ ﾋﾞﾌﾞﾛﾌﾟﾚｰﾄ ﾊﾝﾄﾞｶｯﾀｰ ﾌﾞﾚｰﾄﾞ損料含 2ｔﾀﾞﾝﾌﾟ 労務運搬(Wｷｬﾌﾞ) 燃料込 雑材 軽油",
+    "unit": "m",
+    "quantity": 254,
+    "unit_price": 15393,
+    "amount": 3909822,
+    "details": [
+      {
+        "cost_type": "材料費",
+        "item_name": "NHﾄﾞﾚｰﾝ Φ60",
+        "specification": "NH-60",
+        "unit": "ｍ",
+        "quantity": 120,
+        "unit_price": 5950,
+        "amount": 714000
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "NHﾄﾞﾚｰﾝ Φ114(縁付き)",
+        "specification": "NH-114F",
+        "unit": "ｍ",
+        "quantity": 135,
+        "unit_price": 11900,
+        "amount": 1606500
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "継手Φ60 L字型",
+        "specification": "NHL60",
+        "unit": "個",
+        "quantity": 1,
+        "unit_price": 2800,
+        "amount": 2800
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "継手Φ60 T字型",
+        "specification": "NHT60",
+        "unit": "個",
+        "quantity": 2,
+        "unit_price": 2800,
+        "amount": 5600
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "継手Φ60 十字型",
+        "specification": "NHX60",
+        "unit": "個",
+        "quantity": 1,
+        "unit_price": 2800,
+        "amount": 2800
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "異径継手Φ60-114 T字型",
+        "specification": "NHT114-60F",
+        "unit": "個",
+        "quantity": 4,
+        "unit_price": 5390,
+        "amount": 21560
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "継手Φ114 L字型(縁付き)",
+        "specification": "NHL114F",
+        "unit": "個",
+        "quantity": 1,
+        "unit_price": 5390,
+        "amount": 5390
+      },
+      {
+        "cost_type": "運搬費",
+        "item_name": "運搬費",
+        "specification": "大型ユニック車",
+        "unit": "式",
+        "quantity": 1,
+        "unit_price": 200000,
+        "amount": 200000
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "RC-40(t)",
+        "specification": "配達",
+        "unit": "t",
+        "quantity": 12,
+        "unit_price": 500,
+        "amount": 6000
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "生ｺﾝ1：3ﾓﾙﾀﾙ",
+        "specification": "",
+        "unit": "m3",
+        "quantity": 1.5,
+        "unit_price": 15500,
+        "amount": 23250
+      },
+      {
+        "cost_type": "労務費",
+        "item_name": "世話役",
+        "specification": "",
+        "unit": "人",
+        "quantity": 9,
+        "unit_price": 30000,
+        "amount": 270000
+      },
+      {
+        "cost_type": "労務費",
+        "item_name": "技工",
+        "specification": "",
+        "unit": "人",
+        "quantity": 36,
+        "unit_price": 21000,
+        "amount": 756000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "BH0.15ｸﾚｰﾝ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 9,
+        "unit_price": 8000,
+        "amount": 72000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "ﾋﾞﾌﾞﾛﾌﾟﾚｰﾄ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 9,
+        "unit_price": 1000,
+        "amount": 9000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "ﾊﾝﾄﾞｶｯﾀｰ",
+        "specification": "ﾌﾞﾚｰﾄﾞ損料含",
+        "unit": "台",
+        "quantity": 9,
+        "unit_price": 2000,
+        "amount": 18000
+      },
+      {
+        "cost_type": "運搬費",
+        "item_name": "2ｔﾀﾞﾝﾌﾟ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 18,
+        "unit_price": 5000,
+        "amount": 90000
+      },
+      {
+        "cost_type": "運搬費",
+        "item_name": "労務運搬(Wｷｬﾌﾞ)",
+        "specification": "燃料込",
+        "unit": "台",
+        "quantity": 9,
+        "unit_price": 4000,
+        "amount": 36000
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "雑材",
+        "specification": "",
+        "unit": "式",
+        "quantity": 1,
+        "unit_price": 3600,
+        "amount": 3600
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "軽油",
+        "specification": "",
+        "unit": "L",
+        "quantity": 450,
+        "unit_price": 150,
+        "amount": 67500
+      }
+    ]
+  },
+  {
+    "id": "2320710263_97",
+    "file_name": "2320710263.xlsm",
+    "project_name": "23-263☆（仮称）みんなのスタジアム2.0新設工事",
+    "category": "雨水排水工事",
+    "item_name": "雨水排水管",
+    "specification": "VUΦ200,砂巻",
+    "search_text": "雨水排水管 VUΦ200,砂巻 塩ﾋﾞ管VU200 片受直管　L-2.0m 埋戻用砂 世話役 技工 BH0.15ｸﾚｰﾝ ﾋﾞﾌﾞﾛﾌﾟﾚｰﾄ ﾗﾝﾏｰ 小物機械 2ｔﾀﾞﾝﾌﾟ 労務運搬(Wｷｬﾌﾞ) 燃料込 雑材 軽油",
+    "unit": "m",
+    "quantity": 27,
+    "unit_price": 15185,
+    "amount": 409995,
+    "details": [
+      {
+        "cost_type": "材料費",
+        "item_name": "塩ﾋﾞ管VU200",
+        "specification": "片受直管　L-2.0m",
+        "unit": "本",
+        "quantity": 15,
+        "unit_price": 8500,
+        "amount": 127500
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "埋戻用砂",
+        "specification": "",
+        "unit": "m3",
+        "quantity": 7,
+        "unit_price": 4500,
+        "amount": 31500
+      },
+      {
+        "cost_type": "労務費",
+        "item_name": "世話役",
+        "specification": "",
+        "unit": "人",
+        "quantity": 2,
+        "unit_price": 30000,
+        "amount": 60000
+      },
+      {
+        "cost_type": "労務費",
+        "item_name": "技工",
+        "specification": "",
+        "unit": "人",
+        "quantity": 6,
+        "unit_price": 21000,
+        "amount": 126000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "BH0.15ｸﾚｰﾝ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 2,
+        "unit_price": 8000,
+        "amount": 16000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "ﾋﾞﾌﾞﾛﾌﾟﾚｰﾄ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 2,
+        "unit_price": 1000,
+        "amount": 2000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "ﾗﾝﾏｰ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 2,
+        "unit_price": 1000,
+        "amount": 2000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "小物機械",
+        "specification": "",
+        "unit": "台",
+        "quantity": 2,
+        "unit_price": 3000,
+        "amount": 6000
+      },
+      {
+        "cost_type": "運搬費",
+        "item_name": "2ｔﾀﾞﾝﾌﾟ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 2,
+        "unit_price": 5000,
+        "amount": 10000
+      },
+      {
+        "cost_type": "運搬費",
+        "item_name": "労務運搬(Wｷｬﾌﾞ)",
+        "specification": "燃料込",
+        "unit": "台",
+        "quantity": 2,
+        "unit_price": 4000,
+        "amount": 8000
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "雑材",
+        "specification": "",
+        "unit": "式",
+        "quantity": 1,
+        "unit_price": 6000,
+        "amount": 6000
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "軽油",
+        "specification": "",
+        "unit": "L",
+        "quantity": 100,
+        "unit_price": 150,
+        "amount": 15000
+      }
+    ]
+  },
+  {
+    "id": "2320710263_110",
+    "file_name": "2320710263.xlsm",
+    "project_name": "23-263☆（仮称）みんなのスタジアム2.0新設工事",
+    "category": "雨水排水工事",
+    "item_name": "雨水敷地内最終桝設置",
+    "specification": "1号ﾏﾝﾎｰﾙ",
+    "search_text": "雨水敷地内最終桝設置 1号ﾏﾝﾎｰﾙ ハンドホール RC-40(t) 配達 生ｺﾝ18-8 生ｺﾝ小口配送料 無収縮ﾓﾙﾀﾙ 25kg袋 世話役 技工 BH0.25ｸﾚｰﾝ ﾋﾞﾌﾞﾛﾌﾟﾚｰﾄ ﾗﾝﾏｰ 小物機械 2ｔﾀﾞﾝﾌﾟ 労務運搬(Wｷｬﾌﾞ) 燃料込 雑材 軽油",
+    "unit": "箇所",
+    "quantity": 1,
+    "unit_price": 280000,
+    "amount": 280000,
+    "details": [
+      {
+        "cost_type": "材料費",
+        "item_name": "ハンドホール",
+        "specification": "",
+        "unit": "式",
+        "quantity": 1,
+        "unit_price": 100000,
+        "amount": 100000
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "RC-40(t)",
+        "specification": "配達",
+        "unit": "t",
+        "quantity": 0.5,
+        "unit_price": 500,
+        "amount": 250
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "生ｺﾝ18-8",
+        "specification": "",
+        "unit": "m3",
+        "quantity": 0.7,
+        "unit_price": 22300,
+        "amount": 15610
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "生ｺﾝ小口配送料",
+        "specification": "",
+        "unit": "回",
+        "quantity": 1,
+        "unit_price": 3000,
+        "amount": 3000
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "無収縮ﾓﾙﾀﾙ",
+        "specification": "25kg袋",
+        "unit": "袋",
+        "quantity": 2,
+        "unit_price": 3200,
+        "amount": 6400
+      },
+      {
+        "cost_type": "労務費",
+        "item_name": "世話役",
+        "specification": "",
+        "unit": "人",
+        "quantity": 1,
+        "unit_price": 30000,
+        "amount": 30000
+      },
+      {
+        "cost_type": "労務費",
+        "item_name": "技工",
+        "specification": "",
+        "unit": "人",
+        "quantity": 4,
+        "unit_price": 21000,
+        "amount": 84000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "BH0.25ｸﾚｰﾝ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 1,
+        "unit_price": 10000,
+        "amount": 10000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "ﾋﾞﾌﾞﾛﾌﾟﾚｰﾄ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 1,
+        "unit_price": 1000,
+        "amount": 1000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "ﾗﾝﾏｰ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 1,
+        "unit_price": 1000,
+        "amount": 1000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "小物機械",
+        "specification": "",
+        "unit": "台",
+        "quantity": 1,
+        "unit_price": 3000,
+        "amount": 3000
+      },
+      {
+        "cost_type": "運搬費",
+        "item_name": "2ｔﾀﾞﾝﾌﾟ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 1,
+        "unit_price": 5000,
+        "amount": 5000
+      },
+      {
+        "cost_type": "運搬費",
+        "item_name": "労務運搬(Wｷｬﾌﾞ)",
+        "specification": "燃料込",
+        "unit": "台",
+        "quantity": 1,
+        "unit_price": 4000,
+        "amount": 4000
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "雑材",
+        "specification": "",
+        "unit": "式",
+        "quantity": 1,
+        "unit_price": 9240,
+        "amount": 9240
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "軽油",
+        "specification": "",
+        "unit": "L",
+        "quantity": 50,
+        "unit_price": 150,
+        "amount": 7500
+      }
+    ]
+  },
+  {
+    "id": "2320710263_127",
+    "file_name": "2320710263.xlsm",
+    "project_name": "23-263☆（仮称）みんなのスタジアム2.0新設工事",
+    "category": "舗装工事",
+    "item_name": "路盤工",
+    "specification": "RC-40,t=150",
+    "search_text": "路盤工 RC-40,t=150 RC-40(t) 配達 世話役 技工 ﾋﾞﾌﾞﾛﾌﾟﾚｰﾄ ﾗﾝﾏｰ BH0.15ｸﾚｰﾝ 雑材",
+    "unit": "m2",
+    "quantity": 6968,
+    "unit_price": 315,
+    "amount": 2194920,
+    "details": [
+      {
+        "cost_type": "材料費",
+        "item_name": "RC-40(t)",
+        "specification": "配達",
+        "unit": "t",
+        "quantity": 2390,
+        "unit_price": 500,
+        "amount": 1195000
+      },
+      {
+        "cost_type": "労務費",
+        "item_name": "世話役",
+        "specification": "",
+        "unit": "人",
+        "quantity": 6,
+        "unit_price": 30000,
+        "amount": 180000
+      },
+      {
+        "cost_type": "労務費",
+        "item_name": "技工",
+        "specification": "",
+        "unit": "人",
+        "quantity": 36,
+        "unit_price": 21000,
+        "amount": 756000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "ﾋﾞﾌﾞﾛﾌﾟﾚｰﾄ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 6,
+        "unit_price": 1000,
+        "amount": 6000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "ﾗﾝﾏｰ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 6,
+        "unit_price": 1000,
+        "amount": 6000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "BH0.15ｸﾚｰﾝ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 6,
+        "unit_price": 8000,
+        "amount": 48000
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "雑材",
+        "specification": "",
+        "unit": "式",
+        "quantity": 1,
+        "unit_price": 9000,
+        "amount": 9000
+      }
+    ]
+  },
+  {
+    "id": "2320710263_135",
+    "file_name": "2320710263.xlsm",
+    "project_name": "23-263☆（仮称）みんなのスタジアム2.0新設工事",
+    "category": "舗装工事",
+    "item_name": "路盤強化工法",
+    "specification": "ﾌﾟﾗｲﾑﾌｧｲﾝ",
+    "search_text": "路盤強化工法 ﾌﾟﾗｲﾑﾌｧｲﾝ ﾌﾟﾗｲﾑﾌｧｲﾝ ﾃﾞｨｽﾄﾘﾋﾞｭｰﾀ(昼) 世話役 技工 2ｔﾀﾞﾝﾌﾟ 雑材",
+    "unit": "m2",
+    "quantity": 6968,
+    "unit_price": 169,
+    "amount": 1177592,
+    "details": [
+      {
+        "cost_type": "材料費",
+        "item_name": "ﾌﾟﾗｲﾑﾌｧｲﾝ",
+        "specification": "",
+        "unit": "L",
+        "quantity": 6968,
+        "unit_price": 154.5,
+        "amount": 1076556
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "ﾃﾞｨｽﾄﾘﾋﾞｭｰﾀ(昼)",
+        "specification": "",
+        "unit": "台",
+        "quantity": 2,
+        "unit_price": 50000,
+        "amount": 100000
+      },
+      {
+        "cost_type": "労務費",
+        "item_name": "世話役",
+        "specification": "",
+        "unit": "人",
+        "quantity": 0,
+        "unit_price": 30000,
+        "amount": 0
+      },
+      {
+        "cost_type": "労務費",
+        "item_name": "技工",
+        "specification": "",
+        "unit": "人",
+        "quantity": 0,
+        "unit_price": 21000,
+        "amount": 0
+      },
+      {
+        "cost_type": "運搬費",
+        "item_name": "2ｔﾀﾞﾝﾌﾟ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 0,
+        "unit_price": 5000,
+        "amount": 0
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "雑材",
+        "specification": "",
+        "unit": "式",
+        "quantity": 1,
+        "unit_price": 3444,
+        "amount": 3444
+      }
+    ]
+  },
+  {
+    "id": "2320710263_142",
+    "file_name": "2320710263.xlsm",
+    "project_name": "23-263☆（仮称）みんなのスタジアム2.0新設工事",
+    "category": "舗装工事",
+    "item_name": "人工芝敷設",
+    "specification": "ER(芝丈60mm),充填材(硅砂+黒ｺﾞﾑﾁｯﾌﾟ+HPﾁｯﾌﾟ)",
+    "search_text": "人工芝敷設 ER(芝丈60mm),充填材(硅砂+黒ｺﾞﾑﾁｯﾌﾟ+HPﾁｯﾌﾟ) 人工芝敷設 材工 充填材散布 材工 雑材",
+    "unit": "m2",
+    "quantity": 6968,
+    "unit_price": 6567,
+    "amount": 45758856,
+    "details": [
+      {
+        "cost_type": "外注費",
+        "item_name": "人工芝敷設",
+        "specification": "材工",
+        "unit": "m2",
+        "quantity": 6968,
+        "unit_price": 3968,
+        "amount": 27649024
+      },
+      {
+        "cost_type": "外注費",
+        "item_name": "充填材散布",
+        "specification": "材工",
+        "unit": "m2",
+        "quantity": 6968,
+        "unit_price": 2599,
+        "amount": 18109832
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "雑材",
+        "specification": "",
+        "unit": "式",
+        "quantity": 1,
+        "unit_price": 1144,
+        "amount": 1144
+      }
+    ]
+  },
+  {
+    "id": "2320710263_146",
+    "file_name": "2320710263.xlsm",
+    "project_name": "23-263☆（仮称）みんなのスタジアム2.0新設工事",
+    "category": "舗装工事",
+    "item_name": "人工芝ライン",
+    "specification": "ｻｯｶｺｰﾄ:1面(白),8人制ｻｯｶｺｰﾄ:2面(青)",
+    "search_text": "人工芝ライン ｻｯｶｺｰﾄ:1面(白),8人制ｻｯｶｺｰﾄ:2面(青) ライン工 材工",
+    "unit": "式",
+    "quantity": 1,
+    "unit_price": 500000,
+    "amount": 500000,
+    "details": [
+      {
+        "cost_type": "外注費",
+        "item_name": "ライン工",
+        "specification": "材工",
+        "unit": "式",
+        "quantity": 1,
+        "unit_price": 500000,
+        "amount": 500000
+      }
+    ]
+  },
+  {
+    "id": "2320710263_148",
+    "file_name": "2320710263.xlsm",
+    "project_name": "23-263☆（仮称）みんなのスタジアム2.0新設工事",
+    "category": "舗装工事",
+    "item_name": "砕石舗装",
+    "specification": "RC-40,t=150",
+    "search_text": "砕石舗装 RC-40,t=150 RC-40(t) 配達 世話役 技工 ﾋﾞﾌﾞﾛﾌﾟﾚｰﾄ ﾗﾝﾏｰ BH0.15ｸﾚｰﾝ 雑材",
+    "unit": "m2",
+    "quantity": 0,
+    "unit_price": 0,
+    "amount": 0,
+    "details": [
+      {
+        "cost_type": "材料費",
+        "item_name": "RC-40(t)",
+        "specification": "配達",
+        "unit": "t",
+        "quantity": 56,
+        "unit_price": 500,
+        "amount": 28000
+      },
+      {
+        "cost_type": "労務費",
+        "item_name": "世話役",
+        "specification": "",
+        "unit": "人",
+        "quantity": 1,
+        "unit_price": 30000,
+        "amount": 30000
+      },
+      {
+        "cost_type": "労務費",
+        "item_name": "技工",
+        "specification": "",
+        "unit": "人",
+        "quantity": 5,
+        "unit_price": 21000,
+        "amount": 105000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "ﾋﾞﾌﾞﾛﾌﾟﾚｰﾄ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 1,
+        "unit_price": 1000,
+        "amount": 1000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "ﾗﾝﾏｰ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 1,
+        "unit_price": 1000,
+        "amount": 1000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "BH0.15ｸﾚｰﾝ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 1,
+        "unit_price": 8000,
+        "amount": 8000
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "雑材",
+        "specification": "",
+        "unit": "式",
+        "quantity": 1,
+        "unit_price": 7000,
+        "amount": 7000
+      }
+    ]
+  },
+  {
+    "id": "2320710263_156",
+    "file_name": "2320710263.xlsm",
+    "project_name": "23-263☆（仮称）みんなのスタジアム2.0新設工事",
+    "category": "舗装工事",
+    "item_name": "緑化工",
+    "specification": "種子吹付舗装",
+    "search_text": "緑化工 種子吹付舗装 種子吹付 材工 雑材",
+    "unit": "m2",
+    "quantity": 2741,
+    "unit_price": 302,
+    "amount": 827782,
+    "details": [
+      {
+        "cost_type": "外注費",
+        "item_name": "種子吹付",
+        "specification": "材工",
+        "unit": "m2",
+        "quantity": 2741,
+        "unit_price": 300,
+        "amount": 822300
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "雑材",
+        "specification": "",
+        "unit": "式",
+        "quantity": 1,
+        "unit_price": 7700,
+        "amount": 7700
+      }
+    ]
+  },
+  {
+    "id": "2320710263_160",
+    "file_name": "2320710263.xlsm",
+    "project_name": "23-263☆（仮称）みんなのスタジアム2.0新設工事",
+    "category": "囲障・照明工事",
+    "item_name": "防球ﾈｯﾄ・照明柱用ｺﾝｸﾘｰﾄ柱",
+    "specification": "H=11.0m・14.9m",
+    "search_text": "防球ﾈｯﾄ・照明柱用ｺﾝｸﾘｰﾄ柱 H=11.0m・14.9m 建柱施工費 材工",
+    "unit": "本",
+    "quantity": 40,
+    "unit_price": 491750,
+    "amount": 19670000,
+    "details": [
+      {
+        "cost_type": "外注費",
+        "item_name": "建柱施工費",
+        "specification": "材工",
+        "unit": "式",
+        "quantity": 1,
+        "unit_price": 19670000,
+        "amount": 19670000
+      }
+    ]
+  },
+  {
+    "id": "2320710263_162",
+    "file_name": "2320710263.xlsm",
+    "project_name": "23-263☆（仮称）みんなのスタジアム2.0新設工事",
+    "category": "囲障・照明工事",
+    "item_name": "防球ﾈｯﾄ設置",
+    "specification": "440t44本100mmｼﾙﾊﾞｰ",
+    "search_text": "防球ﾈｯﾄ設置 440t44本100mmｼﾙﾊﾞｰ ﾈｯﾄ・ﾜｲﾔｰ施工費 材工",
+    "unit": "m2",
+    "quantity": 4127,
+    "unit_price": 1560,
+    "amount": 6438120,
+    "details": [
+      {
+        "cost_type": "外注費",
+        "item_name": "ﾈｯﾄ・ﾜｲﾔｰ施工費",
+        "specification": "材工",
+        "unit": "式",
+        "quantity": 1,
+        "unit_price": 6440000,
+        "amount": 6440000
+      }
+    ]
+  },
+  {
+    "id": "2320710263_164",
+    "file_name": "2320710263.xlsm",
+    "project_name": "23-263☆（仮称）みんなのスタジアム2.0新設工事",
+    "category": "囲障・照明工事",
+    "item_name": "防球ﾈｯﾄ出入口加工",
+    "specification": "ｶｰﾃﾝﾈｯﾄH5m W10m",
+    "search_text": "防球ﾈｯﾄ出入口加工 ｶｰﾃﾝﾈｯﾄH5m W10m 出入口カーテン加工費",
+    "unit": "箇所",
+    "quantity": 2,
+    "unit_price": 50000,
+    "amount": 100000,
+    "details": [
+      {
+        "cost_type": "外注費",
+        "item_name": "出入口カーテン加工費",
+        "specification": "",
+        "unit": "箇所",
+        "quantity": 2,
+        "unit_price": 50000,
+        "amount": 100000
+      }
+    ]
+  },
+  {
+    "id": "2320710263_167",
+    "file_name": "2320710263.xlsm",
+    "project_name": "23-263☆（仮称）みんなのスタジアム2.0新設工事",
+    "category": "施設工事",
+    "item_name": "地先境界ﾌﾞﾛｯｸ",
+    "specification": "A種120*120*600",
+    "search_text": "地先境界ﾌﾞﾛｯｸ A種120*120*600 地先A 120×120×600 RC-40(t) 配達 生ｺﾝ18-8 生ｺﾝ小口配送料 生ｺﾝ1：3ﾓﾙﾀﾙ 世話役 技工 BH0.15ｸﾚｰﾝ ﾋﾞﾌﾞﾛﾌﾟﾚｰﾄ ﾊﾝﾄﾞｶｯﾀｰ ﾌﾞﾚｰﾄﾞ損料含 小物機械 2ｔﾀﾞﾝﾌﾟ 労務運搬(Wｷｬﾌﾞ) 燃料込 軽油 雑材",
+    "unit": "m",
+    "quantity": 0,
+    "unit_price": 0,
+    "amount": 0,
+    "details": [
+      {
+        "cost_type": "材料費",
+        "item_name": "地先A",
+        "specification": "120×120×600",
+        "unit": "個",
+        "quantity": 664,
+        "unit_price": 600,
+        "amount": 398400
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "RC-40(t)",
+        "specification": "配達",
+        "unit": "t",
+        "quantity": 13,
+        "unit_price": 500,
+        "amount": 6500
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "生ｺﾝ18-8",
+        "specification": "",
+        "unit": "m3",
+        "quantity": 7,
+        "unit_price": 22300,
+        "amount": 156100
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "生ｺﾝ小口配送料",
+        "specification": "",
+        "unit": "回",
+        "quantity": 3,
+        "unit_price": 3000,
+        "amount": 9000
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "生ｺﾝ1：3ﾓﾙﾀﾙ",
+        "specification": "",
+        "unit": "m3",
+        "quantity": 0.5,
+        "unit_price": 15500,
+        "amount": 7750
+      },
+      {
+        "cost_type": "労務費",
+        "item_name": "世話役",
+        "specification": "",
+        "unit": "人",
+        "quantity": 8,
+        "unit_price": 30000,
+        "amount": 240000
+      },
+      {
+        "cost_type": "労務費",
+        "item_name": "技工",
+        "specification": "",
+        "unit": "人",
+        "quantity": 32,
+        "unit_price": 21000,
+        "amount": 672000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "BH0.15ｸﾚｰﾝ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 8,
+        "unit_price": 8000,
+        "amount": 64000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "ﾋﾞﾌﾞﾛﾌﾟﾚｰﾄ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 8,
+        "unit_price": 1000,
+        "amount": 8000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "ﾊﾝﾄﾞｶｯﾀｰ",
+        "specification": "ﾌﾞﾚｰﾄﾞ損料含",
+        "unit": "台",
+        "quantity": 8,
+        "unit_price": 2000,
+        "amount": 16000
+      },
+      {
+        "cost_type": "機械費",
+        "item_name": "小物機械",
+        "specification": "",
+        "unit": "台",
+        "quantity": 8,
+        "unit_price": 3000,
+        "amount": 24000
+      },
+      {
+        "cost_type": "運搬費",
+        "item_name": "2ｔﾀﾞﾝﾌﾟ",
+        "specification": "",
+        "unit": "台",
+        "quantity": 16,
+        "unit_price": 5000,
+        "amount": 80000
+      },
+      {
+        "cost_type": "運搬費",
+        "item_name": "労務運搬(Wｷｬﾌﾞ)",
+        "specification": "燃料込",
+        "unit": "台",
+        "quantity": 8,
+        "unit_price": 4000,
+        "amount": 32000
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "軽油",
+        "specification": "",
+        "unit": "L",
+        "quantity": 400,
+        "unit_price": 150,
+        "amount": 60000
+      },
+      {
+        "cost_type": "材料費",
+        "item_name": "雑材",
+        "specification": "",
+        "unit": "式",
+        "quantity": 1,
+        "unit_price": 6250,
+        "amount": 6250
+      }
+    ]
+  }
+]

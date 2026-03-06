@@ -1,0 +1,154 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "ReAct Agent API",
+    "description": "建設工事データを自律的に検索するReActエージェント。質問を投げると、エージェントが自分で検索戦略を考え、複数回検索を繰り返して最適な回答を返します。",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://toadoro-react-agent.azurewebsites.net/api",
+      "description": "Azure Functions"
+    }
+  ],
+  "security": [
+    {
+      "function_key": []
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "function_key": {
+        "type": "apiKey",
+        "name": "x-functions-key",
+        "in": "header"
+      }
+    }
+  },
+  "paths": {
+    "/ask": {
+      "post": {
+        "operationId": "askReActAgent",
+        "summary": "ReActエージェントに建設工事データの質問をする",
+        "description": "ユーザーの質問をReActエージェントに渡します。エージェントは自律的に検索を繰り返し、思考過程と最終回答を返します。",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["user_query"],
+                "properties": {
+                  "user_query": {
+                    "type": "string",
+                    "description": "ユーザーの質問。例: '切削オーバーレイ8000m2、殻運搬、区画線工を含む関東の工事を教えて'"
+                  },
+                  "max_iterations": {
+                    "type": "integer",
+                    "description": "最大検索回数（デフォルト10）",
+                    "default": 10
+                  }
+                }
+              },
+              "example": {
+                "user_query": "切削オーバーレイ8000m2、殻運搬、区画線工を含む関東の工事を教えて",
+                "max_iterations": 10
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "検索結果と思考過程",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "description": "処理状態（completed または max_iterations_reached）"
+                    },
+                    "iterations": {
+                      "type": "integer",
+                      "description": "実行されたイテレーション数"
+                    },
+                    "final_answer": {
+                      "type": "string",
+                      "description": "エージェントの最終回答"
+                    },
+                    "thinking_history": {
+                      "type": "array",
+                      "description": "各イテレーションの思考過程とツール呼び出し履歴",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "iteration": {
+                            "type": "integer"
+                          },
+                          "thinking": {
+                            "type": "string",
+                            "description": "このイテレーションでの思考"
+                          },
+                          "tool_calls": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "tool": {
+                                  "type": "string"
+                                },
+                                "arguments": {
+                                  "type": "object"
+                                },
+                                "result_count": {
+                                  "type": "integer"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "リクエストエラー"
+          },
+          "500": {
+            "description": "サーバーエラー"
+          }
+        }
+      }
+    },
+    "/health": {
+      "get": {
+        "operationId": "healthCheck",
+        "summary": "ヘルスチェック",
+        "responses": {
+          "200": {
+            "description": "正常",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string"
+                    },
+                    "service": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

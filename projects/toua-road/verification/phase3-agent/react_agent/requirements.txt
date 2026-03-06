@@ -1,0 +1,5 @@
+azure-functions
+azure-search-documents>=11.6.0
+azure-storage-blob>=12.19.0
+azure-core
+openai>=1.0.0
