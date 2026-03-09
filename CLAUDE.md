@@ -19,6 +19,7 @@ kawagoe--hisho/
 │       ├─ azure-function-deploy/ # Azure Functionsデプロイテンプレート
 │       ├─ ai-search/             # Azure AI Search構築スキル
 │       ├─ document-intelligence/ # ドキュメント処理スキル
+│       ├─ project-info-compile/  # 案件情報コンパイル（カレンダー→議事録→README一括生成）
 │       └─ issue-management.md    # 課題管理スキル
 ├─ CLAUDE.md                      # このファイル（システムの頭脳）
 ├─ plan.md                        # アーキテクチャ設計書
